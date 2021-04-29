@@ -1,0 +1,13 @@
+.slide {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .slide {
+    height: 75%;
+  }
+}
+
+/* .map iframe {
+  pointer-events: none;
+} */
