@@ -1,0 +1,51 @@
+[
+  {
+    "title": "",
+    "date": "2020年11月12日",
+    "link": "/slides/20201112",
+    "desc": "Linux & Cloud Native",
+    "image_src": "/slides/slides_banner/20201112.png"
+  },
+  {
+    "title": "",
+    "date": "2020年2月",
+    "link": "/slides/slide_for_course.html",
+    "desc": "二分搜索时间复杂度分析，数学推导",
+    "image_src": "/slides/slides_banner/20200409.png"
+  },
+  {
+    "title": "",
+    "date": "2019年11月23日",
+    "link": "/slides/slide_1.html",
+    "desc": "常见赛事介绍",
+    "image_src": "/slides/slides_banner/20191123.png"
+  },
+  {
+    "title": "",
+    "date": "2019年10月15日",
+    "link": "/slides/index.html",
+    "desc": "闪电⚡演讲（实际微微久）",
+    "image_src": "/slides/slides_banner/20191015-lightning-talk.png"
+  },
+  {
+    "title": "",
+    "date": "2019年10月15日",
+    "link": "/slides/slide.html",
+    "desc": "OSS 相关分享",
+    "image_src": "/slides/slides_banner/20191015.png"
+  },
+  {
+    "title": "",
+    "date": "2019年9月20日",
+    "link": "/oldslide/index.html",
+    "desc": "一次简短的述职会",
+    "image_src": "/slides/slides_banner/20190920.png"
+  },
+  {
+    "title": "敬请期待",
+    "date": "",
+    "link": "更多内容，敬请期待",
+    "desc": "",
+    "image_src": "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
+  }
+]
