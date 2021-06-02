@@ -1,8 +1,12 @@
 {
   "About": "About",
+  "Blog": "Blog",
   "Policy": "Policy",
   "Mission": "Mission",
+  "More": "More",
   "Product": "Product",
+  "Slides": "Slides",
+  "Tell me everything": "Tell me everything",
   "Tell us everything": "Tell us everything",
   "Contact": "Contact",
   "Do you have any question regarding the project? Feel free to reach out.": "Do you have any question regarding the project? Feel free to reach out.",
@@ -21,8 +25,15 @@
   "Submit": "Submit",
   "Message" : "Message",
   "Your Message": "Your Message",
-  "Name" : "Message",
+  "Name" : "Name",
   "Your Name": "Your Name",
-  "Email" : "Message",
-  "Your Email": "Your Message"
+  "Email" : "Email",
+  "Your Email": "Your Email",
+  "Country": "China",
+  "City": "Guilin. Guangxi",
+  "Towns": "Guilin University of Electronic Technology",
+  "Values": "Values",
+  "Menu": "Menu",
+  "Social": "Social",
+  "Learn about me": "Learn about me"
 }

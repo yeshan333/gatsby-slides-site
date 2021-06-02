@@ -4,6 +4,9 @@ import XHR from "i18next-xhr-backend";
 
 import translationEn from "./locales/en/translation.json";
 import translationEs from "./locales/es/translation.json";
+import translationZh_CN from "./locales/zh-CN/translation.json";
+
+// https://react.i18next.com/legacy-v9/i18next-instance
 
 i18n
   .use(XHR)
@@ -24,6 +27,9 @@ i18n
       },
       es: {
         translations: translationEs,
+      },
+      zh_CN: {
+        translations: translationZh_CN,
       },
     },
     ns: ["translations"],

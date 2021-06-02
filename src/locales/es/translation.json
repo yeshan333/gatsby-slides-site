@@ -1,8 +1,12 @@
 {
   "About": "Acerca de",
+  "Blog": "Blog Blog",
   "Policy": "POLÍTICA",
+  "More": "Mas",
   "Mission": "Misión",
   "Product": "Producto",
+  "Slides": "Slayd",
+  "Tell me everything": "Me ditodo todo",
   "Tell us everything": "Cuéntanos todo",
   "Contact": "Contacto",
   "Do you have any question regarding the project? Feel free to reach out.": "¿Tiene alguna pregunta sobre el proyecto? No dude en contactarnos",
@@ -24,5 +28,12 @@
   "Name" : "Nombre",
   "Your Name": "Tu nombre",
   "Email" : "Email",
-  "Your Email": "Tu correo electrónico"
+  "Your Email": "Tu correo electrónico",
+  "Country": "China",
+  "City": "Guilin. Guangxi",
+  "Towns": "Guilin University of Electronic Technology",
+  "Values": "Valores",
+  "Menu": "Menú",
+  "Social": "Trato Social",
+  "Learn about me": "Aprender sobre mí"
 }
