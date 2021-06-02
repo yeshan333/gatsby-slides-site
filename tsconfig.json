@@ -1,0 +1,29 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": [
+    "gatsby-node.js",
+    "gatsby-config.js"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "strict": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "paths": {
+      "@project/static/*": [
+        "static/*"
+      ],
+    },
+  }
+}
