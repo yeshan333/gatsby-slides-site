@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ padding: string, border: string }>`
   position: relative;
   width: 100%;
   max-width: 1280px;
