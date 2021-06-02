@@ -39,7 +39,7 @@ export const CustomNavLink = styled.div`
   }
 `;
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled.div<{ width: string }>`
   cursor: pointer;
   width: ${(props) => (props.width ? '100%' : '110px')};
   font-weight: 700;
@@ -89,7 +89,7 @@ export const Label = styled.span`
   display: flex;
 `;
 
-export const Outline = styled(MenuOutlined)`
+export const Outline = styled(MenuOutlined)<{ padding?: string }>`
   font-size: 22px;
   padding-right: ${(props) => (props.padding ? '10px' : '')};
 `;

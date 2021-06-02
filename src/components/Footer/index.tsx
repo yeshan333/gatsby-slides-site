@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { Row, Col } from "antd";
 import i18n from "i18next";
 import { withTranslation } from "react-i18next";
-import Loadable from "@loadable/component"
-import Fade from "react-reveal/Fade";
+import Loadable from "@loadable/component";
+import { Fade } from "react-awesome-reveal";
 
 import * as S from "./styles";
 
@@ -31,10 +31,10 @@ const Footer = ({ t }) => {
 
   return (
     <Fragment>
-      <Fade bottom>
+      <Fade direction="up">
         <S.Footer>
           <Container>
-            <Row type="flex" justify="space-between">
+            <Row justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>{t("Contact")}</S.Language>
                 <S.Large to="/">{t("Tell me everything")}</S.Large>
@@ -66,7 +66,7 @@ const Footer = ({ t }) => {
                 </S.Large>
               </Col>
             </Row>
-            <Row type="flex" justify="space-between">
+            <Row justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>{t("ADDRESS")}</S.Language>
@@ -111,7 +111,6 @@ const Footer = ({ t }) => {
         <S.Extra>
           <Container border="true">
             <Row
-              type="flex"
               justify="space-between"
               align="middle"
               style={{ paddingTop: "3rem" }}

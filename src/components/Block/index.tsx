@@ -1,13 +1,13 @@
 import React from 'react';
 import { withTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 import * as S from "./styles";
 
 const Block = ({ title, content, t }) => {
   return (
     <S.Container>
-      <Fade left>
+      <Fade direction="left">
         <h6>{t(title)}</h6>
         <S.TextWrapper>
           <S.Content>{t(content)}</S.Content>

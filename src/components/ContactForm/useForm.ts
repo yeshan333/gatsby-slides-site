@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { notification } from "antd";
 import axios from "axios";
 
-const useForm = (validate) => {
+const useForm = (validate: any) => {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [shouldSubmit, setShouldSubmit] = useState(false);

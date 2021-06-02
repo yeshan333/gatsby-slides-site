@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import Loadable from "@loadable/component"
-import Fade from "react-reveal/Fade";
+import Loadable from "@loadable/component";
+import { Fade } from "react-awesome-reveal";
 
 import * as S from "./styles";
 
@@ -17,8 +17,8 @@ const MiddleBlock = ({ title, content, button, t }) => {
   };
   return (
     <S.MiddleBlock>
-      <Row type="flex" justify="center" align="middle">
-        <Fade bottom>
+      <Row justify="center" align="middle">
+        <Fade direction="up">
           <S.ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{t(title)}</h6>

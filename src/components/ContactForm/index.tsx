@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
-import Zoom from "react-reveal/Zoom";
-import Loadable from "@loadable/component"
+import { Zoom } from "react-awesome-reveal";
+import Loadable from "@loadable/component";
 import { withTranslation } from "react-i18next";
 
 import useForm from "./useForm";
@@ -15,7 +15,7 @@ const Button = Loadable(() => import("../../common/Button"));
 const TextArea = Loadable(() => import("../../common/TextArea"));
 
 const Contact = ({ title, content, id, t }) => {
-  const { values, errors, handleChange, handleSubmit } = useForm(validate);
+  const { values, errors, handleChange, handleSubmit }: any = useForm(validate);
 
   const ValidationType = ({ type }) => {
     const ErrorMessage = errors[type];
@@ -31,9 +31,9 @@ const Contact = ({ title, content, id, t }) => {
   return (
     <S.ContactContainer id={id}>
       <S.Contact>
-        <Row type="flex" justify="space-between" align="middle">
+        <Row justify="space-between" align="middle">
           <Col lg={12} md={11} sm={24}>
-            <Block padding={true} title={title} content={content} />
+            <Block /* padding={true} */ title={title} content={content} />
           </Col>
           <Col lg={12} md={12} sm={24}>
             <S.FormGroup autoComplete="off" onSubmit={handleSubmit}>

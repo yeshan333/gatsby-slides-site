@@ -4,15 +4,16 @@
  * @GitHub: https://github.com/yeshan333
  * @Contact: yeshan1329441308@gmail.com
  * @License:
- * @LastEditTime: 2021-05-06 18:00:47
+ * @LastEditTime: 2021-06-03 02:01:25
  * @Description:
  * @Links:
  */
+
 import React from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import Loadable from "@loadable/component"
-import Fade from "react-reveal/Fade";
+import Loadable from "@loadable/component";
+import { Fade } from "react-awesome-reveal";
 
 import * as S from "./styles";
 
@@ -27,8 +28,8 @@ const About = ({ title, subtitle, content, button, t }) => {
   };
   return (
     <S.MiddleBlock>
-      <Row type="flex" justify="center" align="middle">
-        <Fade bottom>
+      <Row justify="center" align="middle">
+        <Fade direction="up">
           <S.ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6 id="about">{title}</h6>

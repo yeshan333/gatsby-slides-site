@@ -37,7 +37,7 @@ const Header = ({ t }) => {
         <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <S.Span>{t("About")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("#")}>
           <S.Span>{t("Mission")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("footer")}>
@@ -61,7 +61,7 @@ const Header = ({ t }) => {
   return (
     <S.Header>
       <S.Container>
-        <Row type="flex" justify="space-between" gutter={20}>
+        <Row justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
             <SvgIcon src="logo.svg" />
           </S.LogoContainer>
