@@ -40,8 +40,11 @@ const Header = ({ t }) => {
         <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <S.Span>{t("Mission")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <S.Span>{t("Product")}</S.Span>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("footer")}>
+          <S.Span>{t("Social")}</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("slides")}>
+          <S.Span>{t("Slides")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -79,7 +82,7 @@ const Header = ({ t }) => {
             <Col style={{ marginBottom: "2.5rem" }}>
               <S.Label onClick={onClose}>
                 <Col span={12}>
-                  <S.Menu>Menu</S.Menu>
+                  <S.Menu>{t("Menu")}</S.Menu>
                 </Col>
                 <Col span={12}>
                   <S.Outline padding="true" />

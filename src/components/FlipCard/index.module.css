@@ -3,6 +3,7 @@
 .title {
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 50px;
   font-size: 2.575rem;
   font-family: Ubuntu, sans-serif;
 }
@@ -12,7 +13,8 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 150px;
 }
 
 .flip {
@@ -51,6 +53,7 @@
 .flip > .front {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+          border: solid;
 }
 
 .flip > .back {
@@ -110,6 +113,10 @@
   font-size: 0.9125rem;
   line-height: 160%;
   color: #999;
+}
+
+.back_button {
+  margin-top: 4em;
 }
 
 /* .textshadow {

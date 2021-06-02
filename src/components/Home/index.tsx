@@ -1,13 +1,20 @@
 import React from "react";
-import Loadable from "@loadable/component"
+import Loadable from "@loadable/component";
 
+import AboutMeContent from "../../content/AboutMe.json";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
+// import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+// import SocialContent from "../../content/SocialContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import SlidesList from "../../content/SlidesList.json";
+import SlidesContent from "../../content/SlidesContent.json";
 
+import Slide from "../Slide";
+
+const AboutMe = Loadable(() => import("../About"));
+const FlipCard = Loadable(() => import("../FlipCard"));
 const ContactFrom = Loadable(() => import("../ContactForm"));
 const ContentBlock = Loadable(() => import("../ContentBlock"));
 const MiddleBlock = Loadable(() => import("../MiddleBlock"));
@@ -24,14 +31,35 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="employee.svg"
         id="intro"
       />
+
+      <AboutMe
+        title={AboutMeContent.title}
+        subtitle={AboutMeContent.subtitle}
+        content={AboutMeContent.text}
+        button={AboutMeContent.button}
+      />
+
+      {/*
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      />
+      /> */}
+
+      {/* slides */}
+      <FlipCard slides={SlidesContent} />
+
+      {
+        SlidesList.map(item => {
+          return <Slide title={item.title} src={item.src} />
+        })
+      }
+
+      {/* about */}
+      {/*
       <ContentBlock
         type="left"
         title={AboutContent.title}
@@ -40,6 +68,10 @@ const Home = () => {
         icon="graphs.svg"
         id="about"
       />
+      */}
+
+      {/* mission */}
+      {/*
       <ContentBlock
         type="right"
         title={MissionContent.title}
@@ -47,14 +79,20 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
+      */}
 
+      {/* social */}
+      {/*
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
+        title={SocialContent.title}
+        content={SocialContent.text}
+        icon="social.svg"
+        id="social"
       />
+      */}
+
+      {/* contact */}
       <ContactFrom
         title={ContactContent.title}
         content={ContactContent.text}

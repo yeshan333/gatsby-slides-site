@@ -37,19 +37,19 @@ const Footer = ({ t }) => {
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>{t("Contact")}</S.Language>
-                <S.Large to="/">{t("Tell us everything")}</S.Large>
+                <S.Large to="/">{t("Tell me everything")}</S.Large>
                 <S.Para>
                   {t(
                     `Do you have any question regarding the project? Feel free to reach out.`
                   )}
                 </S.Para>
-                <a href="mailto:example@gmail.com">
+                <a href="mailto:yeshan1329441308@gmail.com">
                   <S.Chat>{t(`Let's Chat`)}</S.Chat>
                 </a>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
                 <S.Title>{t("Policy")}</S.Title>
-                <S.Large to="/" left="true">
+                <S.Large left="true" to="/">
                   {t("Application Security")}
                 </S.Large>
                 <S.Large left="true" to="/">
@@ -70,23 +70,25 @@ const Footer = ({ t }) => {
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Para>{t("City")}</S.Para>
+                <S.Para>{t("Towns")}</S.Para>
+                <S.Para>{t("Country")}</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Company")}</S.Title>
+                <S.Title>{t("More")}</S.Title>
                 <S.Large left="true" to="/">
                   {t("About")}
                 </S.Large>
-                <S.Large left="true" to="/">
+                <S.Large left="true" to="https://shansan.top">
                   {t("Blog")}
                 </S.Large>
+                {/*
                 <S.Large left="true" to="/">
                   {t("Press")}
                 </S.Large>
+                */}
                 <S.Large left="true" to="/">
-                  {t("Careers & Culture")}
+                  {t("Values")}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
@@ -98,6 +100,7 @@ const Footer = ({ t }) => {
                     id="select-lang"
                   >
                     <option value="en">English</option>
+                    <option value="zh_CN">简体中文</option>
                     <option value="es">Español</option>
                   </S.LangSelect>
                 </S.Select>
@@ -112,6 +115,7 @@ const Footer = ({ t }) => {
               justify="space-between"
               align="middle"
               style={{ paddingTop: "3rem" }}
+              id="footer"
             >
               <S.NavLink to="/">
                 <S.LogoContainer>
@@ -125,24 +129,24 @@ const Footer = ({ t }) => {
               </S.NavLink>
               <S.FooterContainer>
                 <SocialLink
-                  href="https://github.com/username"
+                  href="https://github.com/yeshan333"
                   src="github.svg"
                 />
                 <SocialLink
-                  href="https://twitter.com/username"
+                  href="https://twitter.com/CloudysYe"
                   src="twitter.svg"
                 />
                 <SocialLink
-                  href="https://www.linkedin.com/in/username/"
-                  src="linkedin.svg"
+                  href="https://www.zhihu.com/people/si-kong-ji-54"
+                  src="zhihu.svg"
                 />
                 <SocialLink
-                  href="https://github.com/username/"
-                  src="instagram.svg"
+                  href="https://www.douban.com/people/178862094/"
+                  src="douban.svg"
                 />
                 <SocialLink
-                  href="https://medium.com/username/"
-                  src="medium.svg"
+                  href="https://github.com/yeshan333"
+                  src="stackoverflow.svg"
                 />
               </S.FooterContainer>
             </Row>
