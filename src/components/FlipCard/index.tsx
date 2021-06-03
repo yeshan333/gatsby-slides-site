@@ -4,7 +4,7 @@
  * @GitHub: https://github.com/yeshan333
  * @Contact: yeshan1329441308@gmail.com
  * @License: MIT
- * @LastEditTime: 2021-06-03 15:59:39
+ * @LastEditTime: 2021-06-03 16:51:00
  * @Description: reference impl -> https://codepen.io/Aoyue/details/pLJqgE
  * @Links: Slides Card
  */
@@ -35,7 +35,7 @@ const FilpCard = (props: FlipCardProps) => {
           {
             props.slides.map(slide => {
               return (
-                <Col xs={24} sm={12} md={8} lg={8} key={slide.image_src}>
+                <Col xs={24} sm={12} md={12} lg={8} key={slide.image_src}>
                   <div className={style.flip}>
                     <div className={style.front}
                       style={{
