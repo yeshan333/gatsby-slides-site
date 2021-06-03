@@ -3,15 +3,16 @@ import Loadable from "@loadable/component";
 
 import AboutMeContent from "../../content/AboutMe.json";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
+// import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 // import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
+// import MissionContent from "../../content/MissionContent.json";
 // import SocialContent from "../../content/SocialContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import SlidesList from "../../content/SlidesList.json";
 import SlidesContent from "../../content/SlidesContent.json";
 
 import Slide from "../Slide";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const AboutMe = Loadable(() => import("../About"));
 const FlipCard = Loadable(() => import("../FlipCard"));
@@ -50,11 +51,17 @@ const Home = () => {
       /> */}
 
       {/* slides */}
-      <FlipCard slides={SlidesContent} />
+      <Zoom direction="up">
+        <FlipCard slides={SlidesContent} />
+      </Zoom>
 
       {
         SlidesList.map(item => {
-          return <Slide title={item.title} src={item.src} />
+          return (
+            <Fade direction="right">
+              <Slide title={item.title} src={item.src} />
+            </Fade>
+          );
         })
       }
 
