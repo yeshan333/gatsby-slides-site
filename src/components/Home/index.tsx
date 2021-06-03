@@ -51,19 +51,19 @@ const Home = () => {
       /> */}
 
       {/* slides */}
-      <Zoom direction="up">
+      <Zoom direction="right">
         <FlipCard slides={SlidesContent} />
       </Zoom>
 
-      {
-        SlidesList.map(item => {
-          return (
-            <Fade direction="right" key={item.src}>
-              <Slide title={item.title} src={item.src} />
-            </Fade>
-          );
-        })
-      }
+      <Fade direction="up">
+        {
+          SlidesList.map(item => {
+            return (
+              <Slide title={item.title} src={item.src} key={item.src}/>
+            );
+          })
+        }
+      </Fade>
 
       {/* about */}
       {/*

@@ -37,7 +37,7 @@ const Header = ({ t }) => {
         <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <S.Span>{t("About")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("#")}>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("footer")}>
           <S.Span>{t("Mission")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("footer")}>

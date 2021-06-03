@@ -79,9 +79,9 @@ const Footer = ({ t }) => {
                 <S.Large left="true" to="/">
                   {t("About")}
                 </S.Large>
-                <S.Large left="true" to="https://shansan.top">
+                <S.ExternalLink left="true" href="https://shansan.top">
                   {t("Blog")}
-                </S.Large>
+                </S.ExternalLink>
                 {/*
                 <S.Large left="true" to="/">
                   {t("Press")}
