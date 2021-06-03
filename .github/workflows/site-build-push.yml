@@ -1,0 +1,40 @@
+name: Gatsby Site Build And Push
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # from: https://github.com/actions/checkout
+      - name: Checkout Repository main branch
+        uses: actions/checkout@main
+
+      # from: https://github.com/actions/setup-node
+      - name: Setup Node.js 12.x
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+
+      - name: Setup Dependencies and Build Project
+        run: |
+          npm install -S
+          npm run build
+          chmod 755 -R public
+
+      # from https://github.com/yeshan333/rsync-deploy-action
+      # push to tencent cloud cvm
+      - name: Push blog to tencentyun CVM
+        uses: yeshan333/rsync-deploy-action@v1.0.0
+        with:
+          ssh_login_username: ${{ secrets.SSH_LOGIN_USERNAME }}
+          remote_server_ip: ${{ secrets.REMOTE_SERVER_IP }}
+          ssh_port: ${{ secrets.SSH_PORT }}
+          ssh_private_key: ${{ secrets.GATSBY_DEPLOY_PRIVATE_KEY }}
+          source_path: ./public/*
+          destination_path: ~/slides.shan333.cn
