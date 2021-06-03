@@ -58,7 +58,7 @@ const Home = () => {
       {
         SlidesList.map(item => {
           return (
-            <Fade direction="right">
+            <Fade direction="right" key={item.src}>
               <Slide title={item.title} src={item.src} />
             </Fade>
           );
