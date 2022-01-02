@@ -38,3 +38,13 @@ jobs:
           ssh_private_key: ${{ secrets.GATSBY_DEPLOY_PRIVATE_KEY }}
           source_path: ./public/*
           destination_path: ~/slides.shan333.cn
+
+      - name: Backup
+        uses: yeshan333/rsync-deploy-action@v1.0.0
+        with:
+          ssh_login_username: ${{ secrets.SSH_LOGIN_USERNAME }}
+          remote_server_ip: ${{ secrets.REMOTE_BACKUP_SERVER_IP }}
+          ssh_port: ${{ secrets.BACKUP_SSH_PORT }}
+          ssh_private_key: ${{ secrets.SSH_BACKUP_PRIVATE_KEY }}
+          source_path: ./public/*
+          destination_path: ~/slides.shan333.cn
