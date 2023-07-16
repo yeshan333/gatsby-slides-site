@@ -31,7 +31,7 @@ jobs:
       # from https://github.com/yeshan333/rsync-deploy-action
       # push to tencent cloud cvm
       - name: Push blog to tencentyun CVM
-        uses: yeshan333/rsync-deploy-action@v1.0.0
+        uses: yeshan333/rsync-deploy-action@v1.1.0
         with:
           ssh_login_username: ${{ secrets.SSH_LOGIN_USERNAME }}
           remote_server_ip: ${{ secrets.REMOTE_SERVER_IP }}
