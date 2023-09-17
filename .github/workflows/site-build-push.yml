@@ -48,4 +48,4 @@ jobs:
           ssh_port: ${{ secrets.SSH_PORT }}
           ssh_private_key: ${{ secrets.GATSBY_DEPLOY_PRIVATE_KEY_BACKUP }}
           source_path: ./public/*
-          destination_path: /opt/1panel/apps/openresty/openresty/www/sites/slides.shan333.cn/index
+          destination_path: ~/slides.shan333.cn
