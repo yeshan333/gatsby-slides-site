@@ -36,6 +36,6 @@ jobs:
           ssh_login_username: ${{ secrets.SSH_LOGIN_USERNAME }}
           remote_server_ip: ${{ secrets.REMOTE_SERVER_IP }}
           ssh_port: ${{ secrets.SSH_PORT }}
-          ssh_private_key: ${{ secrets.GATSBY_DEPLOY_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.GATSBY_DEPLOY_PRIVATE_KEY_BACKUP }}
           source_path: ./public/*
           destination_path: ~/slides.shan333.cn
